@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="main-content">
+    <div class="desserts">
+      <div class="logo">
+        <h1>Desserts</h1>
+      </div>
+
+      <div class="menus">
+        <div class="menu menu-1">
+          <div class="img"><img src="./assets/images/image-waffle-desktop.jpg" alt=""></div>
+          <!-- add to cart -->
+            <div class="add-to-cart" data-target="add-1">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="">
+              <h4>Add to Cart</h4>
+            </div>
+
+            <!-- addition -->
+            <div class="addition" id="add-1" data-id="waffle"> 
+              <button class="minus" data-target="minus-1"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <p class="item-no">0</p>
+              <button class="plus" data-target="plus-1"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+            
+            <div class="content">
+              <p>Waffle</p>
+              <h3>Waffle with Berries</h3>
+              <p class="price">$6.50</p>
+            </div>
+        </div>
+      
+
+      <!-- ##############menu-2 -->
+      <div class="menu menu-1">
+        <div class="img"><img src="./assets/images/image-creme-desktop.jpg" alt=""></div>
+
+        <!-- add to cart -->
+          <div class="add-to-cart" data-target="add-2" >
+            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+            <h4>Add to Cart</h4>
+          </div>
+
+          <!-- addition -->
+          <div class="addition" id="add-2" data-id="creme">
+            <button class="minus" data-target="minus-2"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+            <p class="item-no">0</p>
+            <button class="plus" data-target="plus-2"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+          </div>
+          <!-- creme brulee -->
+          <div class="content">
+            <p>Crème Brûlée</p>
+            <h3>Vanilla Bean Crème Brûlée</h3>
+            <p class="price">$7.00</p>
+          </div>
+      </div>
+    
+
+    <!-- #########################menu-3 -->
+    <div class="menu menu-1">
+      <div class="img"><img src="./assets/images/image-macaron-desktop.jpg" alt=""></div>
+
+      <!-- add to cart -->
+        <div class="add-to-cart" data-target="add-3" >
+          <img src="./assets/images/icon-add-to-cart.svg" alt="">
+          <h4>Add to Cart</h4>
+        </div>
+
+        <!-- addition -->
+        <div class="addition" id="add-3" data-id="macaron">
+          <button class="minus"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+          <p class="item-no">0</p>
+          <button class="plus" data-target="plus-3"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+        </div>
+        <!-- waffle -->
+        <div class="content">
+          <p>Macaron</p>
+          <h3>Macaron Mix of Five</h3>
+          <p class="price">$8.00</p>
+        </div>
+    </div>
+  
+
+  <!-- menu-4 -->
+  <div class="menu menu-1">
+    <div class="img"><img src="./assets/images/image-tiramisu-desktop.jpg" alt=""></div>
+
+    <!-- add to cart -->
+      <div class="add-to-cart" data-target="add-4" >
+        <img src="./assets/images/icon-add-to-cart.svg" alt="">
+        <h4>Add to Cart</h4>
+      </div>
+
+      <!-- addition -->
+      <div class="addition" id="add-4" data-id="classic">
+        <button class="minus"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+        <p class="item-no">0</p>
+        <button class="plus" data-target="plus-4"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+      </div>
+      <!-- waffle -->
+      <div class="content">
+        <p>Tiramisu</p>
+        <h3>Classic Tiramisu</h3>
+        <p class="price">$5.50</p>
+      </div>
+  </div>
+
+
+<!-- #############################menu-5 -->
+<div class="menu menu-1">
+  <div class="img"><img src="./assets/images/image-baklava-desktop.jpg" alt=""></div>
+
+  <!-- add to cart -->
+    <div class="add-to-cart" data-target="add-5" >
+      <img src="./assets/images/icon-add-to-cart.svg" alt="">
+      <h4>Add to Cart</h4>
+    </div>
+
+    <!-- addition -->
+    <div class="addition" id="add-5" data-id="baklava">
+      <button class="minus"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <p class="item-no">0</p>
+              <button class="plus" data-target="plus-5"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+    </div>
+    <!-- waffle -->
+    <div class="content">
+      <p>Baklava</p>
+      <h3>Pistachio Baklava</h3>
+      <p class="price">$4.00</p>
+    </div>
+</div>
+
+
+
+<!-- #############################menu-6 -->
+<div class="menu menu-1">
+  <div class="img"><img src="./assets/images/image-pie-desktop.jpg" alt=""></div>
+
+  <!-- add to cart -->
+    <div class="add-to-cart" data-target="add-6" >
+      <img src="./assets/images/icon-add-to-cart.svg" alt="">
+      <h4>Add to Cart</h4>
+    </div>
+
+    <!-- addition -->
+    <div class="addition" id="add-6" data-id="pie">
+      <button class="minus"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+      <p class="item-no">0</p>
+      <button class="plus" data-target="plus-6"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+    </div>
+    <!-- waffle -->
+    <div class="content">
+      <p>Pie</p>
+      <h3>Lemon Meringue Pie</h3>
+      <p class="price">$5.00</p>
+    </div>
+</div>
+
+
+
+<!-- ########################################menu-7 -->
+<div class="menu menu-1">
+  <div class="img"><img src="./assets/images/image-cake-desktop.jpg" alt=""></div>
+
+  <!-- add to cart -->
+    <div class="add-to-cart" data-target="add-7" >
+      <img src="./assets/images/icon-add-to-cart.svg" alt="">
+      <h4>Add to Cart</h4>
+    </div>
+
+    <!-- addition -->
+    <div class="addition" id="add-7" data-id="cake">
+      <button class="minus"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+      <p class="item-no">0</p>
+      <button class="plus" data-target="plus-7"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+    </div>
+    <!-- waffle -->
+    <div class="content">
+      <p>Cake</p>
+      <h3>Red Velvet Cake</h3>
+      <p class="price">$4.50</p>
+    </div>
+</div>
+
+
+
+
+<!-- ######################################menu-8 -->
+<div class="menu menu-1">
+  <div class="img"><img src="./assets/images/image-brownie-desktop.jpg" alt=""></div>
+
+  <!-- add to cart -->
+    <div class="add-to-cart" data-target="add-8" >
+      <img src="./assets/images/icon-add-to-cart.svg" alt="">
+      <h4>Add to Cart</h4>
+    </div>
+
+    <!-- addition -->
+    <div class="addition" id="add-8" data-id="brownie">
+      <button class="minus"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+      <p class="item-no">0</p>
+      <button class="plus" data-target="plus-8"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+    </div>
+    <!-- waffle -->
+    <div class="content">
+      <p>Brownie</p>
+      <h3>Salted Caramel Brownie</h3>
+      <p class="price">$5.50</p>
+    </div>
+</div>
+
+
+
+
+<!-- #####################################menu-9 -->
+<div class="menu menu-1">
+  <div class="img"><img src="./assets/images/image-panna-desktop.jpg" alt=""></div>
+
+  <!-- add to cart -->
+    <div class="add-to-cart" data-target="add-9" >
+      <img src="./assets/images/icon-add-to-cart.svg" alt="">
+      <h4>Add to Cart</h4>
+    </div>
+
+    <!-- addition -->
+    <div class="addition" id="add-9" data-id="panna">
+      <button class="minus"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+      <p class="item-no">0</p>
+      <button class="plus" data-target="plus-9"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+    </div>
+    <!-- waffle -->
+    <div class="content">
+      <p>Panna Cotta</p>
+      <h3>Vanilla Panna Cotta</h3>
+      <p class="price">$6.50</p>
+    </div>
+</div>
+      </div>
+
+
+    </div>
+
+
+
+  <div class="your-cart">
+    <div class="cart-no">
+      <h3>Your Cart(<span id="order-no">0</span>)</h3>
+    </div>
+    <div class="items">
+      <img src="./assets/images/illustration-empty-cart.svg" alt="">
+      <p>Your added items will appear here</p>
+    </div>
+
+    
+
+    <div class="classic" id="plus-1">
+      <div class="classic-content" data-id="waffle">
+        <h4>Waffle with Berries</h4>
+        <p><span class="no">0</span><span class="x">x</span>  @$<span class="unit">6.50</span> <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-1"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="classic" id="plus-2">
+      <div class="classic-content" data-id="creme">
+        <h4>Vanilla Bean Crème Brûlée</h4>
+        <p><span class="no">0</span><span class="x">x</span>  @$<span class="unit">7.00</span> <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-2"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="classic" id="plus-3">
+      <div class="classic-content" data-id="macaron">
+        <h4>Macaron Mix of Five</h4>
+        <p><span class="no">0</span><span class="x">x</span>  @$<span class="unit">8.00</span> <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-3"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="classic" id="plus-4">
+      <div class="classic-content" data-id="classic">
+        <h4>Classic Tiramisu</h4>
+        <p><span class="no">0</span><span class="x">x</span>  @$<span class="unit">5.50</span> <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-4"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="classic" id="plus-5">
+      <div class="classic-content" data-id="baklava">
+        <h4>Pistachio Baklava</h4>
+        <p><span class="no">0</span><span class="x">x</span>  @$<span class="unit">4.00</span> <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-5"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="classic" id="plus-6">
+      <div class="classic-content" data-id="pie">
+        <h4>Lemon Meringue Pie</h4>
+        <p><span class="no">0</span><span class="x">x</span>  @$<span class="unit">5.00</span> <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-6"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="classic" id="plus-7">
+      <div class="classic-content" data-id="cake">
+        <h4>Red Velvet Cake</h4>
+        <p><span class="no">0</span><span class="x">x</span>  @$<span class="unit">4.50</span> <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-7"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="classic" id="plus-8">
+      <div class="classic-content" data-id="brownie">
+        <h4>Salted Caramel Brownie</h4>
+        <p><span class="no">0</span><span class="x">x</span> @$<span class="unit">5.50</span> <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-8"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="classic" id="plus-9">
+      <div class="classic-content" data-id="panna">
+        <h4>Vanilla Panna Cotta</h4>
+        <p><span class="no">0</span><span class="x">x</span>  @$<span class="unit">6.50</span>  <span class="amount"></span></p>
+      </div>
+      <button class="delete" data-target="plus-9"><img src="./assets/images/icon-remove-item.svg" alt=""></button>
+    </div>
+
+    <div class="order-total">
+      <div class="cashout">
+        <p>Order Total</p>
+        <h1>$ <span id="total-amount">0.00</span></h1>
+      </div>
+    
+      <div class="carbon">
+        <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+        <p>This is a <span id="carbon">carbon-neutral</span> delivery</p>
+      </div>
+  
+      <div class="confirm">
+        <button onclick="confirmOrder()" id="confirm">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="confirmation-window" style="display: none;">
+    <img src="./assets/images/icon-order-confirmed.svg" alt="">
+    <h2>Order Confirmed</h2>
+    <p>We hope you enjoy your food!</p>
+    <div id="confirmed-items"></div>
+
+    <div class="payable">
+      <p>Order Total: </p>
+      <h2 id="confirmed-total">$0.00</h2>
+    </div>
+    
+    <button id="start" onclick="startNewOrder()">Start New Order</button>
+  </div>
+ 
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Fega</a>.
+  </div> -->
+  <script src="function.js"></script>
+</body>
+
+</html>
